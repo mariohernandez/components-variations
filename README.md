@@ -72,6 +72,7 @@ Now, without affecting the original button above, we will create two new variati
 ![Primary button](btn-tertiary.png)
 
 Pretty cool huh? :metal:
+
 ---
 
 Each of the examples above starts by using the default class of `button` to inherit all base button styles.  Whenever we want to use a different color button we append the class `button--secondary` or `button--tertiary` which overrides the original background color property by assigning a new color hex code.  All other original button styles remain unchaged.
