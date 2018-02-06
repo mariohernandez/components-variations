@@ -13,7 +13,7 @@ Component variations is the ability to take a pre-existing component and modify 
 
 Let's start with a pretty basic button component.
 ```html
-  <a class="button">I'm a button</a>
+  <a class="button">Learn More</a>
 ```
 
 Here are the styles which will apply to any element with the class of `button`.
@@ -40,13 +40,13 @@ Here are the styles which will apply to any element with the class of `button`.
 
 ---
 
-### Creating variations
+## Creating variations
 
 Now, without affecting the original button above, we will create two new variations in which we will change the background color of the button.  We will use the css classes `button--secondary` and `button--tertriary` to achive the new variation.  These new classes are appended to the original class of `button`
 
 ### Secondary button
 ```html
-<a class="button button--secondary">I'm a button</a>
+<a class="button button--secondary">Learn More</a>
 ```
 
 ```scss
@@ -61,7 +61,7 @@ Now, without affecting the original button above, we will create two new variati
 
 ### Tertriary button
 ```
-<a class="button button--tertriary">I'm a button</a>
+<a class="button button--tertriary">Learn More</a>
 ```
 ```
 .button--tertriary{
@@ -74,6 +74,8 @@ Now, without affecting the original button above, we will create two new variati
 ---
 
 Pretty cool huh? :metal:
+
+Each of the examples above starts by using the default class of `button` to inherit all base button styles.  Whenever we want to use a different color button we append the class `button--secondary` or `button--tertriary` which overrides the original background color property by assigning a new color hex code.  All other original button styles remain unchaged.
 
 
 
