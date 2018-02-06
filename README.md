@@ -38,6 +38,8 @@ Here are the styles which will apply to any element with the class of `button`.
 
 ![Primary button](btn.png)
 
+---
+
 ### Creating variations
 
 Now, without affecting the original button above, we will create two new variations in which we will change the background color of the button.  We will use the css classes `button--secondary` and `button--tertriary` to achive the new variation.  These new classes are appended to the original class of `button`
@@ -55,6 +57,7 @@ Now, without affecting the original button above, we will create two new variati
 
 ![Primary button](btn-secondary.png)
 
+---
 
 ### Tertriary button
 ```
@@ -67,6 +70,10 @@ Now, without affecting the original button above, we will create two new variati
 ```
 
 ![Primary button](btn-tertriary.png)
+
+---
+
+Pretty cool huh? :metal:
 
 
 
