@@ -42,7 +42,7 @@ Here are the styles which will apply to any element with the class of `button`.
 
 ## Creating variations
 
-Now, without affecting the original button above, we will create two new variations in which we will change the background color of the button.  We will use the css classes `button--secondary` and `button--tertriary` to achive the new variation.  These new classes are appended to the original class of `button`
+Now, without affecting the original button above, we will create two new variations in which we will change the background color of the button.  We will use the css classes `button--secondary` and `button--tertiary` to achive the new variation.  These new classes are appended to the original class of `button`
 
 ### Secondary button
 ```html
@@ -50,7 +50,7 @@ Now, without affecting the original button above, we will create two new variati
 ```
 
 ```scss
-.button--secondary{
+.button--secondary {
   background: #c0392b;
 }
 ```
@@ -59,23 +59,22 @@ Now, without affecting the original button above, we will create two new variati
 
 ---
 
-### Tertriary button
+### tertiary button
 ```
-<a href="#" class="button button--tertriary">Learn More</a>
+<a href="#" class="button button--tertiary">Learn More</a>
 ```
 ```
-.button--tertriary{
+.button--tertiary {
   background: #2980b9;
 }
 ```
 
-![Primary button](btn-tertriary.png)
-
----
+![Primary button](btn-tertiary.png)
 
 Pretty cool huh? :metal:
+---
 
-Each of the examples above starts by using the default class of `button` to inherit all base button styles.  Whenever we want to use a different color button we append the class `button--secondary` or `button--tertriary` which overrides the original background color property by assigning a new color hex code.  All other original button styles remain unchaged.
+Each of the examples above starts by using the default class of `button` to inherit all base button styles.  Whenever we want to use a different color button we append the class `button--secondary` or `button--tertiary` which overrides the original background color property by assigning a new color hex code.  All other original button styles remain unchaged.
 
 
 
