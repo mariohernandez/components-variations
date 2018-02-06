@@ -46,10 +46,12 @@ Now, without affecting the original button above, we will create two new variati
 ```html
 <a class="button button--secondary">I'm a button</a>
 ```
+
 ```scss
 .button--secondary{
   background: #c0392b;
 }
+```
 
 ![Primary button](btn-secondary.png)
 
@@ -58,7 +60,7 @@ Now, without affecting the original button above, we will create two new variati
 ```
 <a class="button button--tertriary">I'm a button</a>
 ```
-
+```
 .button--tertriary{
   background: #2980b9;
 }
