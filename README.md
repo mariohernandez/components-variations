@@ -13,7 +13,7 @@ Component variations is the ability to take a pre-existing component and modify 
 
 Let's start with a pretty basic button component.
 ```html
-  <a class="button">Learn More</a>
+  <a href="#" class="button">Learn More</a>
 ```
 
 Here are the styles which will apply to any element with the class of `button`.
@@ -46,7 +46,7 @@ Now, without affecting the original button above, we will create two new variati
 
 ### Secondary button
 ```html
-<a class="button button--secondary">Learn More</a>
+<a href="#" class="button button--secondary">Learn More</a>
 ```
 
 ```scss
@@ -61,7 +61,7 @@ Now, without affecting the original button above, we will create two new variati
 
 ### Tertriary button
 ```
-<a class="button button--tertriary">Learn More</a>
+<a href="#" class="button button--tertriary">Learn More</a>
 ```
 ```
 .button--tertriary{
