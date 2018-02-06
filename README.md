@@ -38,27 +38,31 @@ Here are the styles which will apply to any element with the class of `button`.
 
 ![Primary button](btn.png)
 
-### Creating a variation
+### Creating variations
 
 Now, without affecting the original button above, we will create two new variations in which we will change the background color of the button.  We will use the css classes `button--secondary` and `button--tertriary` to achive the new variation.  These new classes are appended to the original class of `button`
 
+### Secondary button
 ```html
-  <a class="button button--secondary">I'm a button</a>
-
-    <a class="button button--tertriary">I'm a button</a>
+<a class="button button--secondary">I'm a button</a>
 ```
-
 ```scss
 .button--secondary{
   background: #c0392b;
 }
 
+![Primary button](btn-secondary.png)
+
+
+### Tertriary button
+```
+<a class="button button--tertriary">I'm a button</a>
+```
+
 .button--tertriary{
   background: #2980b9;
 }
 ```
-
-![Primary button](btn-secondary.png)
 
 ![Primary button](btn-tertriary.png)
 
