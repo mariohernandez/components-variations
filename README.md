@@ -109,6 +109,10 @@ This is the markup and styles for our card:
 ```scss
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', 'Verdana', sans-serif;
   font-size: 16px;
@@ -123,6 +127,12 @@ a {
   text-transform: uppercase;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .card {
   position: relative;
   max-width: 640px;
@@ -130,12 +140,6 @@ a {
   margin: 40px auto;
   border-radius: 2px;
   box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 .card__text {
@@ -179,6 +183,10 @@ Our styles now should look like this:
 
 ```scss
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto', 'Verdana', sans-serif;
@@ -259,7 +267,11 @@ img {
   margin-bottom: 5px;
 }
 ```
+In the code above you will noticed several of the original CSS rules now contain one of the two new classes we added to our markup (`card--medium` or `card--small`).  You will also noticed these classes have an **ampersand (`&`)** before the class or after the class.  The ampersand can be used to reference sibling selectors or to add a parent selector to a rule.  Read more about [referencing parent selectors by using ampersand](http://thesassway.com/intermediate/referencing-parent-selectors-using-ampersand).
 
+With a combination of new modifier classes and the handy ampersand, we can create pretty crazy variations of our component.
+
+**NOTE**:  The ampersand is not required, but it's a handy way for writing cleaner Sass code.
 
 
 
