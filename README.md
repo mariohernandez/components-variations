@@ -88,6 +88,8 @@ This is how our default card looks like
 ![Default state of Card](images/card.png)
 
 This is the markup and styles for our card:
+
+*Markup*
 ```html
 <div class="card">
   <div class="card__media">
@@ -102,6 +104,7 @@ This is the markup and styles for our card:
 </div>
 ```
 
+*Styles*
 ```css
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
