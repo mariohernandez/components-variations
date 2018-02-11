@@ -87,6 +87,67 @@ Now that we have a basic concept on variations, let's create a more advanced exa
 This is how our default card looks like
 ![Default state of Card](images/card.png)
 
+This is the markup and styles for our card:
+```html
+<div class="card">
+  <div class="card__media">
+    <img src="https://placeimg.com/640/350/nature" alt="Card component">  
+  </div>
+
+  <div class="card__text">
+    <h2 class="card__text--title">Welcome to SandCamp</h2>
+    <p class="card__text--teaser">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+    <a href="#" class="card__cta">Learn more</a>
+  </div>
+</div>
+```
+
+```css
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+body {
+  font-family: 'Roboto', 'Verdana', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #00BCD4;
+  color: #444;
+}
+
+a {
+  color: #FF1744;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  max-width: 640px;
+  background: #fff;
+  margin: 40px auto;
+  border-radius: 2px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card__text {
+  padding: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card__text--title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+```
+
 
 
 
