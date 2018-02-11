@@ -156,9 +156,11 @@ img {
 Now using the original markup and styles we will create the following two card variations
 
 **Card Medium**
+
 ![Default state of Card](images/card-medium.png)
 
 **Card Small**
+
 ![Default state of Card](images/card-small.png)
 
 
