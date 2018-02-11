@@ -81,7 +81,8 @@ Each of the examples above starts by using the default class of `button` to inhe
 Now that we have a basic concept on variations, let's create a more advanced example.  This time we will start by creating a Card component which contains the following attributes:
 * Image
 * Title
-* Excerpt text
+* Date
+* Teaser text
 * Link
 
 This is how our default card looks like
@@ -150,6 +151,17 @@ img {
   font-weight: 400;
 }
 ```
+
+## Creating variations
+Now using the original markup and styles we will create the following two card variations
+
+**Card Medium**
+![Default state of Card](images/card-medium.png)
+
+**Card Small**
+![Default state of Card](images/card-small.png)
+
+
 
 
 
