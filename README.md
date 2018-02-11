@@ -36,7 +36,7 @@ Here are the styles which will apply to any element with the class of `button`.
 }
 ```
 
-![Primary button](btn.png)
+![Primary button](images/btn.png)
 
 ---
 
@@ -55,11 +55,11 @@ Now, without affecting the original button above, we will create two new variati
 }
 ```
 
-![Primary button](btn-secondary.png)
+![Primary button](images/btn-secondary.png)
 
 ---
 
-### tertiary button
+### Tertiary button
 ```
 <a href="#" class="button button--tertiary">Learn More</a>
 ```
@@ -69,14 +69,23 @@ Now, without affecting the original button above, we will create two new variati
 }
 ```
 
-![Primary button](btn-tertiary.png)
+![Primary button](images/btn-tertiary.png)
 
 Pretty cool huh? :metal:
 
 ---
 
-Each of the examples above starts by using the default class of `button` to inherit all base button styles.  Whenever we want to use a different color button we append the class `button--secondary` or `button--tertiary` which overrides the original background color property by assigning a new color hex code.  All other original button styles remain unchaged.
+Each of the examples above starts by using the default class of `button` to inherit all base button styles.  Whenever we want to use a different color button we append the class `button--secondary` or `button--tertiary` which overrides the original background color property and assigns a new color.  All other original button styles remain unchaged.
 
+## More advanced variations
+Now that we have a basic concept on variations, let's create a more advanced example.  This time we will start by creating a Card component which contains the following attributes:
+* Image
+* Title
+* Excerpt text
+* Link
+
+This is how our default card looks like
+![Default state of Card](images/card.png)
 
 
 
