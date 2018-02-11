@@ -163,6 +163,104 @@ Now using the original markup and styles we will create the following two card v
 
 ![Default state of Card](images/card-small.png)
 
+### Updating Markup
+To create the new variations, we need to update our markup by appending the classes `card--medium` and `card--small` to the existing `card` class.
+Our new card markup should look like this:
+
+```html
+<div class="card card--medium card--small">
+   ...
+</div>
+```
+
+So we are adding two new modifier classes to our original Card component and we will use those modifier classes in our CSS styles to create the different variations.
+
+Our styles now should look like this:
+
+```css
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+body {
+  font-family: 'Roboto', 'Verdana', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #00BCD4;
+  color: #444;
+}
+
+a {
+  color: #FF1744;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  
+  .card--small & {
+    height: 120px;
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 640px;
+  margin: 20px auto;
+  border-radius: 2px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+
+  // Reduces image max-width.
+  &.card--small {
+    max-width: 400px;
+  }
+}
+
+.card__text {
+  padding: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  
+  // Moves text wrapper within image.
+  .card--medium & {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .card--small & {
+    top: 0;
+    left: 100px;
+    .card__text--teaser {
+      display: none;
+    }
+  }
+}
+
+.card__text--title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  
+  .card--small & {
+    font-size: 22px;
+  }
+}
+
+.card__text--date {
+  text-transform: uppercase;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+}
+```
+
+
 
 
 
