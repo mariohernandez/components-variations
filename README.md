@@ -89,7 +89,7 @@ This is how our default card looks like
 
 This is the markup and styles for our card:
 
-*Markup*
+**Markup**
 ```html
 <div class="card">
   <div class="card__media">
@@ -104,7 +104,7 @@ This is the markup and styles for our card:
 </div>
 ```
 
-*Styles*
+**Styles**
 ```css
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
