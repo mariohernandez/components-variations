@@ -106,7 +106,7 @@ This is the markup and styles for our card:
 ```
 
 **Styles**
-```css
+```scss
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
 body {
@@ -177,7 +177,7 @@ So we are adding two new modifier classes to our original Card component and we 
 
 Our styles now should look like this:
 
-```css
+```scss
   @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
 
 body {
